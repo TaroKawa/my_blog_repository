@@ -31,11 +31,12 @@ export default function Navigation({ user }) {
                         </li>
                     ))}
                 </ul>
-                <span>
 
+                <span className="menu-avatar-container">
                     <Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" size={32} />
                     <span className="menu-avatar">{`${user.firstName} ${user.lastName}`}</span>
                 </span>
+
             </div>
             <i className="ionicons icon ion-ios-menu" onClick={() => setMenuActive(!menuActive)} />
         </nav >);
