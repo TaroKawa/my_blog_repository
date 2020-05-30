@@ -3,28 +3,28 @@ import moment from 'moment'
 export default [
     {
         title: "fuck Fukcing you",
-        data: moment().format("05 03, 2015"),
+        date: moment().format("MMMM, DD, YYYY"),
         categories: ["fuck", "news"],
         link: '#',
         image: "fuck.png",
     },
     {
         title: "fuck u",
-        data: moment().format("MMMM DD, YYYY"),
+        date: moment().format("MMMM, DD, YYYY"),
         categories: ["fuck", "news"],
         link: '#',
         image: "fuck.png",
     },
     {
         title: "fuck u",
-        data: moment().format("MMMM DD, YYYY"),
+        date: moment().format("MMMM DD, YYYY"),
         categories: ["fuck", "news"],
         link: '#',
         image: "fuck.png",
     },
     {
         title: "fuck u",
-        data: moment().format("2015 05, 12"),
+        date: "2018/04/05",
         categories: ["fuck", "news"],
         link: '#',
         image: "fuck.png",

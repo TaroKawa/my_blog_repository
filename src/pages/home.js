@@ -1,5 +1,5 @@
 import React from "react"
-import { PostMasonry, MansoryPost } from "../components/common"
+import { PostMasonry, MasonryPost } from "../components/common"
 import trending from "../assets/mocks/trending"
 import featured from "../assets/mocks/featured"
 
@@ -43,7 +43,7 @@ export default function Home() {
                 <h1>Featured Posts</h1>
                 <section className="featured-posts-container">
                     <PostMasonry posts={featured} columns={2} tagsOnTop={true} />
-                    <masonryPost posst={lastFeatured} tagsOnTop={true} />
+                    <MasonryPost post={lastFeatured} tagsOnTop={true} />
                 </section>
 
                 <h1>Trending Posts</h1>
