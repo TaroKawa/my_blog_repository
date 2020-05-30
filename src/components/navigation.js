@@ -18,7 +18,7 @@ const navLinks = [
     },
 ]
 
-export default function Navigation() {
+export default function Navigation({ user }) {
     return (
         <nav className="site-navigation">
             <span className="nume-title">My Awwsome Blog</span>
@@ -30,7 +30,11 @@ export default function Navigation() {
                         </li>
                     ))}
                 </ul>
-                <Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" size={32} />
+                <span>
+
+                    <Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" size={32} />
+                    <span className="menu-avatar-name">{`${user.firstName} ${user.lastName}`}</span>
+                </span>
             </div>
         </nav>);
 }
