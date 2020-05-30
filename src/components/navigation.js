@@ -22,8 +22,7 @@ export default function Navigation() {
     return (
         <nav className="site-navigation">
             <span className="nume-title">My Awwsome Blog</span>
-            <div>
-
+            <div className="menu-content-container">
                 <ul>
                     {navLinks.map((link, index) => (
                         <li key={index}>
@@ -31,7 +30,7 @@ export default function Navigation() {
                         </li>
                     ))}
                 </ul>
+                <Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" size={32} />
             </div>
-            <Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />
         </nav>);
 }
