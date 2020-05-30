@@ -69,8 +69,13 @@
             position: absolute;
             top:65px;
             left:-300px;
-            left:0px;
             transition: 300ms ease left;
+
+            &.active{
+                left:0px;
+
+
+            }
         }
             .ion-ios-menu{
                 display: flex;
