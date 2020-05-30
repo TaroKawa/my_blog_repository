@@ -23,7 +23,7 @@ export default function Navigation({ user }) {
     return (
         <nav className="site-navigation">
             <span className="nume-title">My Awwsome Blog</span>
-            <div className="menu-content-container">
+            <div className={`menu-content-container ${menuActive && 'active'}`}>
                 <ul>
                     {navLinks.map((link, index) => (
                         <li key={index}>
@@ -36,7 +36,7 @@ export default function Navigation({ user }) {
                     <Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" size={32} />
                     <span className="menu-avatar">{`${user.firstName} ${user.lastName}`}</span>
                 </span>
-                <i className="ionicons icon ion-ios-menu" onClick={() => setMenuActive(!menuActive)} />
             </div>
-        </nav>);
+            <i className="ionicons icon ion-ios-menu" onClick={() => setMenuActive(!menuActive)} />
+        </nav >);
 }
