@@ -6,16 +6,13 @@ export default function MansoryPost({ post, tagsOnTop }) {
     const style = { ...imageBackground, ...post.style }
 
     return (
-        <a className="mansory-post overlay" style={style} href={post.link}>
+        <a className="masonry-post overlay" style={style} href={post.link}>
             <div className="image-text">
                 <div className="tags-container">
                     {post.categories.map((tag, ind) =>
                         <span key={ind} className="tag" style={{ backgroundColor: categoryColors[tag] }}>
                             {tag.toUpperCase()}
-
                         </span>
-
-
                     )}
                 </div>
                 <div>

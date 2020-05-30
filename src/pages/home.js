@@ -9,7 +9,20 @@ const trendingConfig = {
     }
 }
 
-const featuredConfig = {}
+const featuredConfig = {
+    0: {
+        gridArea: '1/1/2/3',
+        height: "300px"
+    },
+    1: {
+        height: "300px",
+    },
+    3: {
+        height: "630px",
+        marginleft: "30px",
+        width: "630px"
+    }
+}
 
 const mergeStyles = function (posts, config) {
     posts.forEach((post, index) => {
