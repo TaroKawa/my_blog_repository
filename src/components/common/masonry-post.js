@@ -2,7 +2,8 @@ import React from "react"
 import { categoryColors } from "./styles"
 
 export default function MansoryPost({ post, tagsOnTop }) {
-    const style = { backgroundImage: `url("${require(`../../assets/images/${post.image}`)}")` };
+    const ImageBackground = { backgroundImage: `url("${require(`../../assets/images/${post.image}`)}")` };
+    const style = { ...ImageBackground, ...post.style }
     return (
         <a className="mansory-post overlay" style={style} href={post.link}>
             <div className="image-text">
